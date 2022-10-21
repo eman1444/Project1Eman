@@ -554,6 +554,7 @@ height: 100%;
     .number-item .icon {
         color: #6195ff;
         margin-bottom: 15px;
+          margin-right: 40px;
     }
     .number-item-title {
         font-weight: bold;
