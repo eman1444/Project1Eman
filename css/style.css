@@ -1,0 +1,821 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ 
+.list1 li{ color: black;
+    margin-right: 30px;
+   display: inline-block;
+   font-size: 25px;
+   font-weight: bold;
+   
+}
+.parant .d1 .list1 li >.a1a::after {
+    width: 100%
+}
+.parant .d1 .list1 li >a:hover::after {
+    width: 100%
+}
+.parant .d1 .list1 li >a::after ,.parant .d1 .list1 li >a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+     display:block;  
+    background-color: green;
+    box-shadow: 5px 5px 5px green;
+    margin-top: 2px;
+    transition: .5s;
+}
+.d1{
+    width: 100%;
+    height: 60px;
+   border-bottom: 3px solid green;
+   position: fixed;
+   overflow: auto;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   opacity: 50%;
+   background-color: white;
+}
+
+
+body{ 
+    background-color: rgb(243, 252, 246);
+min-height: 2000px;
+}
+.im1{
+    
+   
+    width: 100px;
+    height: 70px;
+ 
+  float: right;
+  margin-right: 50px;
+  margin-top: -15px;
+}
+
+.list1{
+
+    margin-right: 20px;
+    margin-top: 10px;
+    float: right;
+    padding: -9px;
+    list-style: none;
+
+  
+}
+
+
+.a2{
+    
+    text-decoration: none;
+    color: green;
+
+font-weight: bold;}
+.aa{ color: black;
+    text-decoration: none;
+}
+/* ///////////////////////////////////////////// veiw height ارتفاع على مستوى ارتفاع الشاشة */
+.home {
+    height: 100vh; 
+    background-image: url(../image/img.JPG);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 65px;
+}
+.overley{
+    /* طالما شي فوق شي اذا ضروري position :absolute */
+    position: absolute;
+    /* ارتفاع وعرض بالنسبة لاي شاشة افتتح فيها الموقع home */
+    width: 100%;
+    height: 100%;
+    /* البداية من اعلى اليسار */
+    top: 0;
+    left: 0;
+    /* background-color: black;
+    opacity: 0.7;    السطرين نفس السطر القادم */
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+.home_content{
+    width: 60%;
+    /* علاشان نجيب اي محتوى في نص الصفحة بالظبط نستخدم hero image باربعة اكود */
+position: absolute;
+top: 50%;
+left: 50%;
+/* عرض وارتفاع بالنسبة للشكل نفسة والقيمة السالبة للرجوع للورى وللفوق */
+transform: translate(-50%,-50%);
+text-align: center;
+
+}
+.title2{
+    color: white;
+    font-size: 40px;
+}
+.p2{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 25px;
+}
+.btn2,.btn22{
+    width: 150px;
+padding: 15px 0px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 15px;
+font-weight: bold;
+border: none;
+}
+.btn2{
+color:white;
+background-color: green;
+
+}
+.btn2:hover,.btn22:hover{
+    opacity: 0.7;
+
+}
+/* /////////////////////////// */
+.home1{
+    height: 100vh; 
+    background-color: rgb(99, 249, 97);  
+  
+    position: relative;
+}
+.home1 img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: auto;
+}
+/* ///////////////////////////////////////////تكملة القسم الاول */
+
+.container ,.container1{ 
+    /* هوامش من اليمين واليسار تلقائية  */
+    width: 80%;
+ 
+    margin: auto;
+    margin-top: 40px;
+}
+.container1{
+    height: 100vh;
+     background-color: rgb(72, 206, 117); 
+    margin-bottom: 50px;
+    
+}
+.team{
+overflow: auto;
+}
+.team-item{
+    float: left;
+    width: 27%;
+    padding: 17px 13px;
+    text-align: center;
+       background-color: rgb(222, 223, 221);
+       position: relative;
+}
+.team-img
+{
+
+width: 90%;
+margin: auto;
+position: relative;
+}
+.team-overley{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* الاربع الاكواد الاولة نفسها لمن اقل العرض 100% والطول100% */
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+.team-item:hover .team-overley{
+    visibility: visible;
+    opacity: 1;
+
+}
+.team-overley a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color:rgb(163, 163, 241);
+    margin-left: auto;
+    color: white;
+}
+.team-overley a  i{
+    line-height: 40px;
+}
+.mg{
+    margin: 0px 5%;
+
+}
+.team-img img{
+    width: 100%;
+}
+.team-info-title{
+    padding: 10px 0px;
+}
+.team-info-text{
+    color: rgb(66, 88, 72);
+    font-size: 16px;
+    font-weight: bold;
+}
+.team-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    opacity: 0;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+}
+/* //////////////////////////////////////////////////////////معرض الصور */
+
+.container1{
+    height: 90vh;
+     background-color: rgb(207, 250, 210); 
+    margin-bottom: 50px;
+    
+}
+.team1{
+overflow: auto;
+
+}
+.team-item1{
+    float: left;
+    width: 25%;
+    padding: 17px 13px;
+    text-align: center;
+       background-color: rgb(207, 250, 210);
+       position: relative;
+margin: 20px 30px;
+       
+}
+.team-img1
+{
+
+width: 90%;
+margin: auto;
+position: relative;
+}
+.team-overley1 span {
+    font-size: 30px;
+    color: white;
+}
+.team-overley1 h3{
+    font-size: 25px;
+    color: rgb(233, 221, 221);
+}
+.team-overley1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* الاربع الاكواد الاولة نفسها لمن اقل العرض 100% والطول100% */
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    padding: 50px;
+    transition: 0.5s;
+
+}
+.team-item1:hover .team-overley1{
+    visibility: visible;
+    opacity: 1;
+
+}
+.team-overley1 a{
+    
+    width: 50px;
+    height: 50px;
+    background-color:rgb(163, 163, 241);
+    margin-left: auto;
+    color: white;
+}
+.team-overley1 a  i{
+    line-height: 40px;
+}
+.mg{
+    margin: 0px 5%;
+
+}
+.team-img1 img{
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius:20px ;
+}
+
+
+.team-item1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    opacity: 0;
+}
+.team-item1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 2s;
+}
+/* //////////////////////////////////// */
+.father_div3{
+    
+        text-align: center; 
+        height: 350px;
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+
+}
+.div3 a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.div3 p{
+    font-weight: bold;
+    font-size: 20px;
+    color: #888;
+}
+.icon {
+    color: #6195ff;
+    margin-bottom: 10px;
+}
+.fa-2x {
+    font-size: 2em;
+}
+.div33{
+    margin: 0 3%;
+}
+.div3{
+    line-height: 40px;
+        position: relative;
+    
+        width: 28%;
+        float: left;
+        text-align: center;
+        border: 1px solid  #888;
+        padding: 30px 15px;
+        margin-top: 40px;
+    
+}
+
+.div3::after{
+    content: "";
+    position: absolute; /* نخلية فوق الاب */
+    width: 0;
+    height: 0;
+    top:0;
+    left: 0;
+    opacity: 90%; /*لرؤية النص الذي تحته*/
+    transition: 2s; /* اخذ وقت للحركة*/
+    
+}
+
+.div3:hover::after {
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    
+   
+}
+/* /////////////////////////////////////////////////////////////تكملة قسم الكادر الاكاديمي */
+/* قسم what  we offer */
+.father_div4{
+    
+    text-align: center; 
+    height: 550px;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+
+}
+.icn{
+    float:left;
+    margin-bottom:10px;
+
+}
+.div4 a {
+text-decoration: none;
+font-weight: bold;
+font-size: 20px;
+padding-left: 50px;
+}
+.div4 p{
+font-weight: bold;
+font-size: 20px;
+color: #888;
+text-align: center;
+}
+.icon {
+color: #6195ff;
+margin-bottom: 10px;
+margin-left: 40px;
+}
+.fa-2x {
+font-size: 2em;
+}
+.div44{
+margin: 0 3%;
+}
+.div4{
+line-height: 40px;
+    position: relative;
+
+    width: 28%;
+    float: left;
+    text-align: center;
+    border: 1px solid  #888;
+    padding: 20px 15px;
+    margin-top: 40px;
+
+}
+
+.div4::after{
+content: "";
+position: absolute; /* نخلية فوق الاب */
+width: 0;
+height: 0;
+top:0;
+left: 0;
+opacity: 90%; /*لرؤية النص الذي تحته*/
+transition: 2s; /* اخذ وقت للحركة*/
+
+}
+
+.div4:hover::after {
+background-color: #333;
+width: 100%;
+height: 100%;
+
+
+}
+/* ////////////////////////////////////////////////////////// */
+.icn1{
+    border: 1px solid #6195ff;
+    color: #6195ff;
+    padding: 3px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.div42 ul li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.div42 ul li:hover{
+    background-color: #6195ff;
+}
+.div42 ul  .l1{
+    background-color: #6195ff;
+}
+.div42{
+    float: right;
+    width: 50%;
+}
+.div41{
+    width: 50%;
+    float: left;
+}
+.div4p{
+    padding-right: 20px;
+    color: rgb(2, 52, 9);
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* font-weight: bold; */
+}
+.dd1 li{
+    font-size: 19px;
+}
+.div42img{
+    width: 450px;
+    height: 350px;
+    border-radius: 20px;
+}
+/* ////////////////////////////// */
+
+
+.numbers {
+    position: relative;
+    background-image: url(../image/1.jpg);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.numbers-items {
+    overflow: hidden;
+    padding-top: 130px;}
+    .number-item {
+        width: 25%;
+        float: left;
+        text-align: center;
+    }
+    .number-item .icon {
+        color: #6195ff;
+        margin-bottom: 15px;
+    }
+    .number-item-title {
+        font-weight: bold;
+        font-size: 30px;
+        color: #fff;
+    }
+    .number-item-text {
+        color: #fff;
+    }
+/* ////////////////////////////////////// */
+.testimonial {
+    position: relative;
+    background-image: url(../image/2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.testimonial-content {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+.testimonial-item {
+    float: right;
+    width: 50%;
+    color: #fff;
+    /* padding-right: 20px; */
+     padding-top: 55px; 
+     margin-bottom: 110px; 
+    
+}
+.testimonial-toplayer {
+    padding: 90px 20px 10px 150px;
+    position: relative;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.testimonial-desc {
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-left: 76px;
+    font-size: 14px;
+}
+.testimonial-toplayer img {
+    position: absolute;
+    top: 82px;
+    left: 65px;
+    border-radius: 50%;
+}
+
+/* /////////////////////////////////////////// */
+.s1{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid green;
+ padding: auto;
+ margin: auto;
+}
+.t1 {
+margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    color:    rgb(4, 107, 59);
+}
+
+.line {
+    width: 70px;
+    height: 4px;
+    background-color: rgb(13, 14, 13);
+    margin: auto;
+    margin-top: -5px ;
+}
+/*////////////////////////////////////////////////*/
+
+.div1 {
+    width:28%;
+    height:300px;
+    border: 2px solid  rgb(1, 44, 24);
+    z-index: 0;
+    background-color:rgb(245, 245, 226); ;
+    text-align: center ;
+   
+    float: left;
+    margin-left: 35px;
+    position: relative;
+
+}
+
+.div1:hover::after {
+    background-color: rgb(72, 129, 6);
+    width: 100%;
+    height: 100%;
+    
+   
+}
+.div1::after{
+    content: "";
+    position: absolute; /* نخلية فوق الاب */
+    width: 0;
+    height: 0;
+    top:0;
+    left: 0;
+    opacity: 50%; /*لرؤية النص الذي تحته*/
+    transition: 2s; /* اخذ وقت للحركة*/
+    
+}
+.father_div2{
+    width: 80%;
+ 
+    margin: auto;
+}
+.div2 {
+    width:28%;
+    height:380px;
+background-color: rgb(245, 245, 226);
+    
+    z-index: 0;
+    text-align: center ;
+box-shadow:2px 2px rgb(4, 112, 13);
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.div2:hover::after {
+    background-color: rgb(148, 243, 180);
+    width: 100%;
+    height: 100%;
+    
+   
+}
+.div2::after{
+    content: "";
+    position: absolute; /* نخلية فوق الاب */
+    width: 100%;
+    height: 0;
+    bottom:0;
+    right:  0;
+    opacity: 50%; /*لرؤية النص الذي تحته*/
+    transition: 2s; /* اخذ وقت للحركة*/
+    
+}
+.title1{
+    color: rgb(8, 114, 51);
+}
+.title1:hover {
+    color: rgb(221, 235, 33);
+}
+
+.a1 {
+    text-decoration: none;
+    font-size: 23px;
+    color: rgb(126, 207, 44);
+}
+
+.a1:hover {
+    color: rgb(221, 235, 33);
+}
+.p1{
+    font-size: 20px;
+    margin: 20px auto;
+}
+.p1:hover {
+    color: rgb(221, 235, 33);
+}
+
+.btn1 {
+    width:100px;
+    height: 45px;
+    
+    border-radius: 16px;
+    color: black;
+    border: 3px solid green;
+    font-size: 29px;
+}
+.btn1:hover {
+    background-color:rgb(80, 172, 110) ;
+    color: rgb(153, 153, 6)
+}
+
+.imge{
+  width: 100%;
+    height: 200px;
+
+}
+
+/* ///////////////////////////////////////////////// */
+.father {
+    width: 85%;
+ 
+    margin: auto;
+    overflow: auto;
+    margin-top: 100px;
+   
+}
+.team img{
+    width: 250px;
+    height: 280px;
+}
+/*/////////////////////////////////////*/
+.footer {
+     background-color: rgb(207, 250, 210);
+    text-align: center;
+    height: 200px;
+    padding: 60px 0;
+  
+}
+.mmg {
+    width: 100px;
+    height: 100px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.footer-links li {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #054226;
+    margin: 10px 5px;
+    border-radius: 50%;
+    position: relative;
+}
+.footer-links li::after {
+    content: "";
+    position: absolute; /* نخلية فوق الاب */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:  0;
+    border-radius: 50%;
+    /* box-shadow: 5px 5px 1px rgb(75, 146, 99); */
+    opacity: 60%; /*لرؤية النص الذي تحته*/
+    transition: 3s; /* اخذ وقت للحركة*/
+    
+}
+.footer-links li:hover::after{
+    background-color: rgb(244, 249, 245);
+width: 100%;
+height: 100%;
+}
+
+.footer-links li a i {
+    line-height: 40px;
+    color: white;
+}
+.footer p {
+    color: rgb(5, 105, 80);
+    font-size: 18px;
+
+}
